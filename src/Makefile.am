@@ -2,20 +2,20 @@ MAINTAINERCLEANFILES = Makefile.in
 
 AM_CFLAGS = -W -Wall -Werror -g
 
-lib_LTLIBRARIES = libem2.la
+lib_LTLIBRARIES = libeventmachine.la
 
 EMHEADERS = \
-  em2.h
+  eventmachine.h
   
 EM_FILES = \
-  em2.c \
+  eventmachine.c \
   $(EMHEADERS)
 
-installed_headersdir = $(prefix)/include/em2
+installed_headersdir = $(prefix)/include/eventmachine
 installed_headers_DATA = $(EMHEADERS)
 
-libem2_la_SOURCES = $(EM_FILES)
+libeventmachine_la_SOURCES = $(EM_FILES)
 
-libem2_la_LIBADD = 
-libem2_la_LDFLAGS = -version-info 1 0 0
-libem2_la_LIBTOOLFLAGS =
+libeventmachine_la_LIBADD = 
+libeventmachine_la_LDFLAGS = -version-info 1 0 0
+libeventmachine_la_LIBTOOLFLAGS =
