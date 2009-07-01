@@ -1,0 +1,20 @@
+http://www.gnu.org/software/autoconf/manual/automake/Simple-Tests.html#Simple-Tests
+
+We can use the test support in Automake along with assert() etc to do our testing.
+It simply builds and executes specified files and ensures that they give OK return 
+values. If not, the test is considered to have failed.
+
+Running 'make check' runs the tests.
+
+This is a basic Makefile.am example for the tests/ directory:
+
+// This is a list of files to be executed as tests. Without any other options,
+// they are considered to be directly executable.
+TESTS = check_basic
+
+// Anything prefixed with 'check_' is only performed during a 'make check'.
+// These are the same as any other Makefile.am dependencies with that exception.
+// Our tests will need the public header and link against the built library.
+check_PROGRAMS = check_basic
+check_basic_SOURCES = check_basic.c $(top_builddir)/src/eventmachine.h
+check_basic_LDADD = $(top_builddir)/src/libeventmachine.la
