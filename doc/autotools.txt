@@ -1,0 +1,10 @@
+To generate everything:
+
+autoreconf --install
+
+then ./configure... etc as usual.
+
+
+To clean it all, reducing you to the minimal stuff which should be in the repo:
+
+make maintainer-clean
