@@ -22,4 +22,5 @@ src/libeventmachine.la
 src/libeventmachine_la-eventmachine.lo
 src/libeventmachine_la-eventmachine.o
 stamp-h1
-
+doc/html
+doc/latex
