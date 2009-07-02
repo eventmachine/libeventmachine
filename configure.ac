@@ -10,3 +10,9 @@ Makefile
 src/Makefile
 tests/Makefile
 ])
+
+echo
+echo "${PACKAGE} ${VERSION}"
+echo
+echo "Now type 'make' ('gmake' on some systems) to compile ${PACKAGE}"
+echo
