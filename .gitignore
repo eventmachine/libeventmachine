@@ -23,3 +23,5 @@ doc/latex
 *.la
 *.lo
 *.o
+
+tests/check_basic

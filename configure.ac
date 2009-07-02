@@ -8,6 +8,7 @@ AC_PROG_LIBTOOL
 AC_OUTPUT([
 Makefile
 src/Makefile
+src/lib/Makefile
 tests/Makefile
 ])
 
