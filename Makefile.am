@@ -4,4 +4,4 @@ MAINTAINERCLEANFILES = Makefile.in config.h aclocal.m4 config.h.in config.h.in~ 
 
 MAINTAINERCLEANDIRS = autom4te.cache
 
-SUBDIRS = src
+SUBDIRS = src tests

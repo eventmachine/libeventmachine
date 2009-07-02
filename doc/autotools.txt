@@ -1,6 +1,6 @@
 To generate everything:
 
-autoreconf --install
+./autogen.sh
 
 then ./configure... etc as usual.
 
