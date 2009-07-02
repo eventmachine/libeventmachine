@@ -1,6 +1,16 @@
 #ifndef EVENTMACHINE_H
 #define EVENTMACHINE_H
 
+/**
+ * @mainpage EventMachine
+ *
+ * @section intro Introduction
+ * EventMachine is ...
+ *
+ * @section features Features
+ * Makes you coffee....
+ */
+
 #ifdef __cplusplus
 extern "C" {
 #endif
