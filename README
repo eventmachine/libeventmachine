@@ -1,3 +1,15 @@
 C library component of the new EventMachine
 
 http://wiki.github.com/eventmachine/eventmachine/em2-eventmachine-20
+
+ Installing EventMachine
+-------------------------
+
+  ./autogen.sh    (if you've retrieved the source from git)
+  ./configure
+  make
+  make install    (as root)
+
+You can execute the test suite with:
+
+  make check
